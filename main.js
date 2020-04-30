@@ -1,4 +1,4 @@
-let dataB = {
+let db = {
   "accounts": [
     {
       "title": "lorem ipsum 1",
@@ -16,20 +16,20 @@ let dataB = {
 }
 
 let state = {
-  localData: null,
+  localData: null, //local state for all of data from db
+  selectedItem: null, // a variable that determines where the application focus at
   screen1: {
-    selectedFirstScreen: true,
-    selectedItem: null,
-    indexCounter: 0
+    selectedFirstScreen: true, // screens variable. if false => second screen was selected.
+    indexCounter: 0 // counter for account items list
   },
   screen2: {
     inputValue: '',
-    lastButton: 'input'
+    lastButton: 'input' // last button where user was before came to input back
   }
 }
 
-let { localData } = state
-let { selectedFirstScreen, selectedItem, indexCounter } = state.screen1
+let { localData, selectedItem } = state
+let { selectedFirstScreen, indexCounter } = state.screen1
 
 // ------- Creating constants for html elements -------
 const accountsContainer = document.querySelector('[data-accounts]')
@@ -84,7 +84,7 @@ const addNewAccount = () => {
 
 // ------- Sending payload to database
 const sendData = (payload) => {
-  dataB = payload
+  db = payload
 }
 
 // ------- Deleting account funciton -------
@@ -312,7 +312,7 @@ const setAccounts = () => {
 // ------- Setting funtion -------
 // "Fetching" data from database and setting it to localData
 const setData = () => {
-  localData = dataB
+  localData = db
 }
 
 
