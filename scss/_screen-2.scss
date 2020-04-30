@@ -1,0 +1,28 @@
+.secondSection {
+
+  &.hidden {
+    display: none;
+  }
+
+  .inputBox {
+    padding: 40px 60px;
+
+    &__input {
+      margin: 20px 40px;
+      padding: 5px 10px;
+      border: 1px solid #a3a3a3;
+      outline: none;
+      transition: ease-in-out .1s;
+
+      &.active {
+        border-color: #707070; 
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

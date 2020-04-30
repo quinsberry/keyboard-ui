@@ -1,0 +1,132 @@
+.mainSection {
+  width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+}
+
+.mainSection.hidden {
+  display: none;
+}
+
+.mainSection__sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.mainSection__sidebar--title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.mainSection__sidebar--item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 12px;
+  margin: 3px 0px;
+  border-radius: 30px;
+  outline: none;
+  transition: ease-in-out .1s;
+}
+
+.mainSection__sidebar--item.active {
+  border-radius: 30px;
+  color: white;
+  background: #707070;
+}
+
+.mainSection__sidebar--item img {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.mainSection__sidebar--item span {
+  font-size: 20px;
+}
+
+.mainSection__mainButtonSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondSection.hidden {
+  display: none;
+}
+
+.secondSection .inputBox {
+  padding: 40px 60px;
+}
+
+.secondSection .inputBox__input {
+  margin: 20px 40px;
+  padding: 5px 10px;
+  border: 1px solid #a3a3a3;
+  outline: none;
+  transition: ease-in-out .1s;
+}
+
+.secondSection .inputBox__input.active {
+  border-color: #707070;
+}
+
+.secondSection .inputBox__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+.app-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.advice {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+}
+
+.advice h2 {
+  margin: 0;
+  font-weight: 300;
+  opacity: .8;
+}
+
+.btn {
+  width: 90px;
+  height: 30px;
+  color: white;
+  background: #a3a3a3;
+  border-radius: 30px;
+  box-shadow: none;
+  outline: none;
+  transition: .3s;
+}
+
+.btn.active {
+  background: #707070;
+}
+/*# sourceMappingURL=main.css.map */

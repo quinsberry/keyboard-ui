@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Testing application</title>
+</head>
+
+<body>
+  <div class="app-wrapper">
+    <section class="mainSection" data-screen-1>
+      <div class="mainSection__sidebar" data-accounts>
+        <h4 class="mainSection__sidebar--title">Accounts:</h4>
+        <div class="mainSection__sidebar--items" data-accounts-items></div>
+      </div>
+
+      <div class="mainSection__mainButtonSide">
+        <button class="mainSection__mainButtonSide--button btn active" data-add-btn>ADD</button>
+      </div>
+
+      <div></div>
+    </section>
+
+    <section class="secondSection hidden" data-screen-2>
+      <div class="inputBox">
+        <input type="text" class="inputBox__input" data-input>
+        <div class="inputBox__buttons">
+          <button class="add btn" data-add-title>Add</button>
+          <button class="cancel btn" data-cancel>Cancel</button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="advice">
+    <h2>Do not click by mouse. Use only keyboard</h2>
+  </footer>
+
+</body>
+
+<script src="./main.js"></script>
+
+</html>
